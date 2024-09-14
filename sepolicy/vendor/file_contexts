@@ -1,0 +1,34 @@
+# Same Process HAL
+/(vendor|system/vendor)/lib(64)?/hw/android\.hardware\.graphics\.mapper@2\.0-impl\.so u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib(64)?/hw/android\.hardware\.graphics\.mapper@2\.0-impl-2\.1\.so u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib(64)?/hw/android\.hardware\.graphics\.mapper@3\.0-impl\.so u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib(64)?/hw/android\.hardware\.graphics\.mapper@4\.0-impl\.so u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib(64)?/hw/android\.hardware\.renderscript@1\.0-impl\.so     u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib(64)?/hw/gralloc\.default\.so                              u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib(64)?/libhwbinder.so u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib(64)?/libhidltransport.so u:object_r:same_process_hal_file:s0
+
+
+# Hypnus
+/(vendor|system/vendor)/bin/hw/vendor\.oppo\.hardware\.hypnus@1\.0-service          u:object_r:hal_hypnus_oppo_exec:s0
+
+
+# NFC
+/dev/pn553 u:object_r:nfc_device:s0
+
+# Light
+/vendor/bin/hw/android\.hardware\.light-service\.RMX3191      u:object_r:hal_light_default_exec:s0
+
+# EGIS Fingerprint device
+/dev/esfp0  u:object_r:egis_device:s0  
+
+# Silead Fingerprint device
+/dev/silead_fp  u:object_r:silead_device:s0
+
+# Biometrics
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.RMX3191    u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.oppo\.hardware\.biometrics\.fingerprint@2\.1-service              u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.silead\.hardware\.fingerprintext@1\.0-service          u:object_r:hal_fingerprint_default_exec:s0
+
+# Audio
+/dev/sia81xx_tuning_if 	u:object_r:sia81xx_tuning_if_device:s0

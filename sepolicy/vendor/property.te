@@ -1,0 +1,14 @@
+# Dirac
+type dirac_prop, property_type;
+
+# Oppo props
+type oppo_fingerprint_prop, property_type;
+
+# Audio
+type audio_tunning_prop, property_type;
+
+# Camera
+type oppo_camera_prop, property_type, property_type;
+
+# Oppo Wifi props
+type oppo_wifi_prop, property_type, property_type;

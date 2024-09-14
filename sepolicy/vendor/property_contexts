@@ -1,0 +1,12 @@
+
+# Oppo Camera props
+vendor.oppo.camera.   u:object_r:oppo_camera_prop:s0
+
+# Wifi
+vendor.oplus.wifi.rus.version u:object_r:vendor_oppo_prop:s0
+vendor.oplus.wifi.rus.upgrade.ctl u:object_r:vendor_oppo_prop:s0
+
+
+# Fingerprint
+ro.vendor.build.fingerprint.oppo    u:object_r:vendor_oppo_prop:s0
+ro.vendor.version_variant u:object_r:vendor_oppo_prop:s0
