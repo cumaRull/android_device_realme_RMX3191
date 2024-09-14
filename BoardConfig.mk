@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/realme/even
+DEVICE_PATH := device/realme/RMX3191
 
 #Assert
 TARGET_OTA_ASSERT_DEVICE := RMX3191,RMX3193,RMX3195,RMX3197,RMX3430,even
@@ -83,12 +83,15 @@ BOARD_RAMDISK_OFFSET := 0x07c08000
 BOARD_KERNEL_SECOND_OFFSET := 0x00e88000
 BOARD_DTB_OFFSET := 0x0bc08000
 BOARD_BOOT_HEADER_VERSION := 2
-ARGET_KERNEL_ARCH := arm64
+
+TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/realme/even
 TARGET_KERNEL_CONFIG := even_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+BOARD_KERNEL_IMAGE_NAME := Image.gz
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+
 BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
@@ -151,6 +154,12 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
+
+# Manifest
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
+
+
 
 # Sepolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
