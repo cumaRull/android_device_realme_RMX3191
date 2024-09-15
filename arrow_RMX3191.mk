@@ -26,7 +26,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/RMX3191/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_RMX3191
+PRODUCT_NAME := arrow_RMX3191
 PRODUCT_DEVICE := RMX3191
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme C25 Series
