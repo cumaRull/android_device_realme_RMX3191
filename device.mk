@@ -17,10 +17,10 @@
 DEVICE_PATH := device/realme/RMX3191
 
 # Call proprietary blob setup
-$(call inherit-product, vendor/realme/RMX3191/RMX3191-vendor.mk)
+$(call inherit-product, vendor/realme/even/even-vendor.mk)
 
 # IMS
-$(call inherit-product, vendor/realme/RMX3191-ims/RMX3191-ims.mk)
+$(call inherit-product, vendor/realme/even-ims/even-ims.mk)
 
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
