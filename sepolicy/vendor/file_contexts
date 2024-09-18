@@ -8,14 +8,6 @@
 /(vendor|system/vendor)/lib(64)?/libhwbinder.so u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/libhidltransport.so u:object_r:same_process_hal_file:s0
 
-
-# Hypnus
-/(vendor|system/vendor)/bin/hw/vendor\.oppo\.hardware\.hypnus@1\.0-service          u:object_r:hal_hypnus_oppo_exec:s0
-
-
-# NFC
-/dev/pn553 u:object_r:nfc_device:s0
-
 # Light
 /vendor/bin/hw/android\.hardware\.light-service\.RMX3191      u:object_r:hal_light_default_exec:s0
 
