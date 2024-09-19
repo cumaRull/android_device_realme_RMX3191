@@ -17,9 +17,6 @@
 import common
 import re
 
-import common
-import re
-
 def FullOTA_InstallEnd(info):
   OTA_InstallEnd(info)
   return
