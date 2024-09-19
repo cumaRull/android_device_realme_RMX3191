@@ -17,11 +17,8 @@
 import common
 import re
 
-def FullOTA_InstallBegin(info):
-  data = info.input_zip.read("RADIO/dynamic-remove-oppo")
-  common.ZipWriteStr(info.output_zip, "dynamic-remove-oppo", data)
-  info.script.AppendExtra('update_dynamic_partitions(package_extract_file("dynamic-remove-oppo"));')
-  return
+import common
+import re
 
 def FullOTA_InstallEnd(info):
   OTA_InstallEnd(info)
