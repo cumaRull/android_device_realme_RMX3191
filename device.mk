@@ -17,7 +17,7 @@
 DEVICE_PATH := device/realme/RMX3191
 
 # Call proprietary blob setup
-$(call inherit-product, vendor/realme/RMX3191/RMX3191-vendor.mk)
+$(call inherit-product, vendor/realme/even/even-vendor.mk)
 
 # IMS
 $(call inherit-product, vendor/realme/even-ims/even-ims.mk)
